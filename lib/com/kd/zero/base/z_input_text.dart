@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:styled_widget/styled_widget.dart';
 import 'package:zero_flutter_helper/com/kd/zero/common/zcolors.dart';
 
-class BaseInputText extends StatelessWidget {
+class ZInputText extends StatelessWidget {
 
   final String title;
   final String? value;
@@ -11,7 +11,7 @@ class BaseInputText extends StatelessWidget {
   final Widget? right;
   final ValueChanged<String>? callback;
 
-  const BaseInputText(this.title,this.callback,{Key? key,this.value,this.required,this.onTap,this.right}) : super(key: key);
+  const ZInputText(this.title,this.callback,{Key? key,this.value,this.required,this.onTap,this.right}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
