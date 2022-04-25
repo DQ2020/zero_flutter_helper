@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:styled_widget/styled_widget.dart';
-import 'package:zero_flutter_helper/com/kd/zero/widget/style_widget.dart';
+import 'package:zero_flutter_helper/zero/widget/style_widget.dart';
 
 class ZAppBar extends StatelessWidget implements PreferredSizeWidget {
 

@@ -1,8 +1,8 @@
 library zero_flutter_helper;
 
 import 'package:flutter/material.dart';
-import 'package:zero_flutter_helper/com/kd/zero/base/z_app_bar.dart';
-import 'package:zero_flutter_helper/com/kd/zero/base/z_input_text.dart';
+import 'package:zero_flutter_helper/zero/base/z_app_bar.dart';
+import 'package:zero_flutter_helper/zero/base/z_input_text.dart';
 
 void main() {
   runApp(const TestApp());

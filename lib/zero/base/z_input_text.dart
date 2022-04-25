@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:styled_widget/styled_widget.dart';
-import 'package:zero_flutter_helper/com/kd/zero/common/zcolors.dart';
+import 'package:zero_flutter_helper/zero/common/zcolors.dart';
 
 class ZInputText extends StatelessWidget {
 

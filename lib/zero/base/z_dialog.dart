@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:zero_flutter_helper/com/kd/zero/common/zcolors.dart';
+import 'package:zero_flutter_helper/zero/common/zcolors.dart';
 
 class ZDialog extends StatelessWidget {
 
