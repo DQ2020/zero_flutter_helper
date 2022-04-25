@@ -1,4 +1,4 @@
-group 'com.example.hello'
+group 'com.kd.zero'
 version '1.0-SNAPSHOT'
 
 buildscript {
