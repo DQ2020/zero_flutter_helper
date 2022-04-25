@@ -1,4 +1,4 @@
-package com.example.zero.hello
+package com.example.zero
 
 import androidx.annotation.NonNull
 

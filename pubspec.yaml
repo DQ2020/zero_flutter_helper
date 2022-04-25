@@ -1,6 +1,6 @@
 name: zero_flutter_helper
 description: base widget
-version: 0.1.1
+version: 0.1.2
 author: 'DanQi'
 homepage: 'https://github.com/DQ2020/zero_flutter_helper.git'
 update_note: ''
@@ -33,7 +33,7 @@ flutter:
     implements: zero_flutter_helper
     platforms:
       android:
-        package: com.kd.zero.android
+        package: com.kd.zero
         pluginClass: HelloPlugin
 
   assets:
