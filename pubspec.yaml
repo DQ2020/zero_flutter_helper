@@ -1,6 +1,6 @@
 name: zero_flutter_helper
 description: base widget
-version: 0.0.6
+version: 0.0.7
 author: 'DanQi'
 homepage: 'https://github.com/DQ2020/zero_flutter_helper.git'
 update_note: ''
@@ -29,6 +29,12 @@ dev_dependencies:
 # The following section is specific to Flutter.
 flutter:
   uses-material-design: true
+  plugin:
+    implements: zero_flutter_helper
+    platforms:
+      android:
+        package: com.kd.zero.android
+        pluginClass: HelloPlugin
 
   assets:
     - image/
