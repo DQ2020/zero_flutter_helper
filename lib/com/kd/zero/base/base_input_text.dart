@@ -9,7 +9,7 @@ class BaseInputText extends StatelessWidget {
   final bool? required;
   final GestureTapCallback? onTap;
   final Widget? right;
-  final Function? callback;
+  final ValueChanged<String>? callback;
 
   const BaseInputText(this.title,this.callback,{Key? key,this.value,this.required,this.onTap,this.right}) : super(key: key);
 
@@ -26,6 +26,7 @@ class BaseInputText extends StatelessWidget {
         Positioned(
           child: right??TextField(
             onTap: onTap,
+            onChanged: callback,
             readOnly: onTap!=null?true:false,
             controller: TextEditingController(text: value??""),
             textAlign: TextAlign.right,
