@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:styled_widget/styled_widget.dart';
-import 'package:zero_flutter_helper/zero/widget/style_widget.dart';
+import 'package:zero_flutter_helper/widget/style_widget.dart';
 
 class ZAppBar extends StatelessWidget implements PreferredSizeWidget {
 
@@ -26,7 +26,7 @@ class ZAppBar extends StatelessWidget implements PreferredSizeWidget {
       children: [
         const SizedBox(height: 15,),
         Text(title,style: const TextStyle(color: Colors.white),),
-        Image.asset(backImg??"image/ic_back.png",width: 30).clickInk(onTap: (){
+        Image.asset(backImg??"images/ic_back.png",width: 30,package: 'zero_flutter_helper',).clickInk(onTap: (){
           if(back == null){
             Navigator.of(context).pop();
           }else{
