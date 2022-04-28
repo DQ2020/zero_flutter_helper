@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:zero_flutter_helper/common/zcolors.dart';
 
-class ZDialog extends StatelessWidget {
+class ZDialog<T> extends StatelessWidget {
 
   final title;
   final titleTextSize;
@@ -24,7 +24,7 @@ class ZDialog extends StatelessWidget {
     required this.title,
     this.titleTextSize = 16.0,
     this.titleTextColor = Colors.black87,
-    required this.message,
+    this.message,
     this.messageTextSize = 14.0,
     this.messageTextColor = Colors.black45,
     this.okText,
@@ -60,7 +60,7 @@ class ZDialog extends StatelessWidget {
             ),
             Container(
                 margin: const EdgeInsets.only(top: 19, left: 35, right: 35),
-                child: child ?? Text(message, style: TextStyle(
+                child: child ?? Text(message??"", style: TextStyle(
                     fontSize: messageTextSize, color: messageTextColor))
             ),
             Container(
@@ -100,7 +100,11 @@ class ZDialog extends StatelessWidget {
                     child: TextButton(
                       onPressed: () {
                         if (null != okEvent) {
-                          okEvent!();
+                          if(child != null) {
+                            okEvent!(child);
+                          } else{
+                            okEvent!();
+                          }
                         } else{
                           Navigator.of(context).pop();
                         }
@@ -125,7 +129,7 @@ class ZDialog extends StatelessWidget {
   }
 }
 
-showDialog2(context, dialog) {
+zShowDialog(context, dialog) {
   showDialog(context: context, builder: (context) {
     return dialog!;
   });
